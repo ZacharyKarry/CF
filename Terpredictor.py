@@ -61,3 +61,6 @@ clf = RandomForestClassifier(n_jobs=2, random_state=42)
 # Train the Classifier to take the training features and learn how they relate
 # to the training y (the species)
 clf.fit(X_train, y_train)
+
+#pd.crosstab(clf.predict(X_test),y_test['Rating'])
+#list(zip(X_train, clf.feature_importances_))
